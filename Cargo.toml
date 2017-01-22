@@ -1,0 +1,6 @@
+[package]
+name = "TheRustProgrammingLanguageBookExamples"
+version = "0.1.0"
+authors = ["zhangaz1 <zhangaz1@hotmail.com>"]
+
+[dependencies]
