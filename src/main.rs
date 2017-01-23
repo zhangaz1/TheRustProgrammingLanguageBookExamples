@@ -39,6 +39,7 @@ fn main() {
                                     .collect();
 
     for h in handles {
-        h.join().unwrap();
+        h.join()
+            .unwrap();
     }
 }
