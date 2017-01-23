@@ -32,9 +32,9 @@ fn main() {
     
     let handles: Vec<_> = philosophers.into_iter()
                                     .map(|p| {
-                                        thread::spawn(move || {
+                                        return thread::spawn(move || {
                                             p.eat();
-                                        })
+                                        });
                                     })
                                     .collect();
 
