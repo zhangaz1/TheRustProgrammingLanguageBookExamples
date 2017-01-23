@@ -19,7 +19,7 @@ impl Philosopher {
 
     fn eat(&self, table: &Table) {
         let _left = table.forks[self.left].lock().unwrap();
-        thread::sleep(Duration::from_millis(150));
+        // thread::sleep(Duration::from_millis(150));
         let _right = table.forks[self.right].lock().unwrap();
 
         println!("{} is eating", self.name);
