@@ -1,5 +1,5 @@
 fn main() {
-    let f = add_one;
+    let f: fn(i32) -> i32 = add_one;
     println!("1 add one {}", f(1));
 
     // let x = diverges();
