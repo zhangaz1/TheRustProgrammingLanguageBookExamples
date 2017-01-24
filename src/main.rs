@@ -1,7 +1,7 @@
 fn main() {
     println!("1 add one {}", add_one(1));
 
-    diverges();
+    let x = diverges();
 }
 
 fn add_one(x: i32) -> i32 {
