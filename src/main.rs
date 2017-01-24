@@ -1,14 +1,8 @@
 fn main() {
-    let f: fn(i32) -> i32 = add_one;
-    println!("1 add one {}", f(1));
+    let y: bool = true;
+    let a: char = 'a';
+    let b: &str = "abc";
+    let (x, z) = (true, false);
 
-    // let x = diverges();
+    println!("a length {}", b);
 }
-
-fn add_one(x: i32) -> i32 {
-    x + 1
-}
-
-// fn diverges() -> ! {
-//     panic!("This function never returns!");
-// }
