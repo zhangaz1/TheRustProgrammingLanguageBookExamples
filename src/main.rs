@@ -1,7 +1,13 @@
 fn main() {
-    let lines = "hello\nworld".lines();
+    let mut x = 5;
 
-    for (linenumber, line) in lines.enumerate() {
-        println!("{}: {}", linenumber, line);
+    loop {
+        x += x - 3;
+
+        println!("{}", x);
+
+        if x % 5 == 0 {
+            break;
+        }
     }
 }
