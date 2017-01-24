@@ -1,5 +1,7 @@
 fn main() {
-    for (index, value) in (0..10).enumerate()  {
-        println!("index = {} and value = {}", index, value);
+    let lines = "hello\nworld".lines();
+
+    for (linenumber, line) in lines.enumerate() {
+        println!("{}: {}", linenumber, line);
     }
 }
