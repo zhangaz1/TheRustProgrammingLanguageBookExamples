@@ -1,13 +1,17 @@
 fn main() {
     let v = vec![1, 2, 3];
-    {
-        let v2 = v;
-    }
+    // takev(v);
     println!("{}", v[1]);
 
     let x = 5;
-    {
-        let x2 = &x;
-    }
+    take(x);
     println!("{}", x);
+}
+
+fn take (n: i32) {
+
+}
+
+fn takev (v: Vec<i32>) {
+
 }
