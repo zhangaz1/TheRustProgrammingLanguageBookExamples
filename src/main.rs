@@ -1,9 +1,16 @@
 fn main() {
-    let index: usize = 2;
-    let v = vec![1, 2, 3];
+    let mut v = vec![1, 2, 3];
 
-    match v.get(index) {
-        Some(x) => println!("Item {} is {}", index, x),
-        None => println!("Sorry, this vector is too short."),
+    for i in &v {
+        println!("reference {}", i);
     }
+
+    for i in &mut v {
+        println!("mut reference {}", i);
+    }
+
+    for i in v {
+        println!("value {}", i);
+    }
+
 }
