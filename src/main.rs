@@ -1,7 +1,13 @@
 fn main() {
     println!("1 add one {}", add_one(1));
+
+    diverges();
 }
 
 fn add_one(x: i32) -> i32 {
-    return x + 1;
+    x + 1
+}
+
+fn diverges() -> ! {
+    panic!("This function never returns!");
 }
