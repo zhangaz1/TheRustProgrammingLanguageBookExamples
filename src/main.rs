@@ -1,6 +1,6 @@
 fn main() {
     let v = vec![1, 2, 3];
-    // takev(v);
+    let v = takev(v);
     println!("{}", v[1]);
 
     let x = 5;
@@ -32,6 +32,6 @@ fn take (n: i32) {
 
 }
 
-fn takev (v: Vec<i32>) {
-
+fn takev (v: Vec<i32>) -> Vec<i32> {
+    v
 }
