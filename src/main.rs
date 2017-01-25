@@ -10,6 +10,14 @@ fn main() {
     let i = 1;
     let i2 = i;
     println!("i = {}", i);
+
+    let a = 5;
+    let y = double(a);
+    println!("a = {}, y = {}", a, y);
+}
+
+fn double(n: i32) -> i32 {
+    n * 2
 }
 
 fn take (n: i32) {
