@@ -6,6 +6,10 @@ fn main() {
     let x = 5;
     take(x);
     println!("{}", x);
+
+    let i = 1;
+    let i2 = i;
+    println!("i = {}", i);
 }
 
 fn take (n: i32) {
