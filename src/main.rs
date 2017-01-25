@@ -14,6 +14,14 @@ fn main() {
     let a = 5;
     let y = double(a);
     println!("a = {}, y = {}", a, y);
+
+    let b = true;
+    let notB = toggle(b);
+    println!("b = {}, notB = {}", b, notB);
+}
+
+fn toggle(b: bool) -> bool {
+    !b
 }
 
 fn double(n: i32) -> i32 {
