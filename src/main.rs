@@ -23,6 +23,7 @@ fn main() {
     let v2 = vec![4, 5, 6];
     let (v1, v2, answer) = return_all(v1, v2);
     println!("v1 = {}, v2 = {}, answer = {}", v1[0], v2[0], answer);
+
 }
 
 
