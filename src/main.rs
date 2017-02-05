@@ -25,6 +25,8 @@ fn main() {
     println!("v1 = {}, v2 = {}, answer = {}", v1[0], v2[0], answer);
 }
 
+
+
 fn return_all(v1: Vec<i32>, v2: Vec<i32>) -> (Vec<i32>, Vec<i32>, i32) {
     (v1, v2, 5)
 }
